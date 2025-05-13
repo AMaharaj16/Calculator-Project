@@ -5,7 +5,8 @@
     <style>
         input {
             width: 260px;
-            height: 3cqmax;
+            height: 40px;
+            font-size: x-large;
         }
         body {
             background-color: black;
@@ -48,26 +49,26 @@
     <div>
         <button id="delete" onclick="del()">DEL</button>
         <button id="negative" onclick="negative()">&#177</button>
-        <button id="mod" onclick="mod()">%</button>
-        <button id="divide" onclick="divide()">&#247</button>
+        <button id="mod" onclick="appendToDisplay('%')">%</button>
+        <button id="divide" onclick="appendToDisplay('/')">&#247</button>
     </div>
     <div>
         <button id="seven" onclick="appendToDisplay('7')">7</button>
         <button id="eight" onclick="appendToDisplay('8')">8</button>
         <button id="nine" onclick="appendToDisplay('9')">9</button>
-        <button id="times" onclick="times()">&#215</button>
+        <button id="times" onclick="appendToDisplay('*')">&#215</button>
     </div>
     <div>
         <button id="four" onclick="appendToDisplay('4')">4</button>
         <button id="five" onclick="appendToDisplay('5')">5</button>
         <button id="six" onclick="appendToDisplay('6')">6</button>
-        <button id="minus" onclick="minus()">&#8722</button>
+        <button id="minus" onclick="appendToDisplay('-')">&#8722</button>
     </div>
     <div>
         <button id="one" onclick="appendToDisplay('1')">1</button>
         <button id="two" onclick="appendToDisplay('2')">2</button>
         <button id="three" onclick="appendToDisplay('3')">3</button>
-        <button id="plus" onclick="plus()">&#43</button>
+        <button id="plus" onclick="appendToDisplay('+')">&#43</button>
     </div>
     <div>
         <button id="zero" onclick="appendToDisplay('0')">0</button>
