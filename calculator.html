@@ -2,6 +2,45 @@
 <html lang="en">
 <head>
     <title>Calculator</title>
+    <style>
+        input {
+            width: 260px;
+            height: 3cqmax;
+        }
+        body {
+            background-color: black;
+        }
+        #title {
+            color: White;
+        }
+        button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-top: 3px;
+            margin-left: 2px;
+            margin-right: 2px;
+            margin-bottom: 3px;
+            font-size: x-large;
+        }
+        #zero {
+            width: 128px;
+            border-radius: 999px;
+        }
+
+        #divide { 
+            background-color: #FF9500;
+        }
+        #times { 
+            background-color: #FF9500;
+        }
+        #minus { 
+            background-color: #FF9500;
+        }
+        #plus { 
+            background-color: #FF9500;
+        }
+    </style>
 </head>
 <body>
     <h1 id="title">Calculator</h1>
@@ -35,5 +74,6 @@
         <button id="dot" onclick="appendToDisplay('.')">.</button>
         <button id="equal" onclick="equal()">=</button>
     </div>
+    <script src="calculator_functions.js"></script>
 </body>
 </html>
